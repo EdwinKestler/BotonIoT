@@ -1,3 +1,29 @@
+/*
+  Boton de IoT con moduo de verificacion RFID 
+
+  Este boton envia un evento de alarma el cual debe ser descativado por medio de una tarjeta de RFID 
+  Utiliza Un Wemo D1 Mini V2
+  Una Bateria de 800mAh
+  Un Buzzer 
+  un LKed RGB 
+  un Lector RD6000 de RFID
+  un Boton momentaneo Rojo 
+  un Modulo de Recarga de Baterias
+  
+  The circuit:
+  * list the components attached to each input
+  * list the components attached to each output
+
+  Fue creado por Edwin Kestler el 1/12/2016
+  Ultima Fecha de Modificacion: 07/02/2017
+  por Edwin Kestler
+
+  Ver www.flatbox.co
+
+
+*/
+
+
 #include <Arduino.h>
 // Librerias de ESP // MQTT/ JSON FORMAT data
 #include <ESP8266WiFi.h>                                              //Libreira de ESPCORE ARDUINO
@@ -12,7 +38,7 @@
 #include <WiFiManager.h>                                              //https://github.com/tzapu/WiFiManager
 //----------------------------------------------------------------------Librerias de Codigo de Lectora RFID
 #include <SoftwareSerial.h>                                           //Libreria de SoftwareSerial para recibir data del sensor
-#include "settings.h"                                                 //Libreria local que contiene valores configurables de conexion
+#include "Setting.h"                                                 //Libreria local que contiene valores configurables de conexion
 //------------------------------------------------------------------------Libreria Externa de control de ChiP ESSPRESIF C++
 extern "C" {
   #include "user_interface.h"
