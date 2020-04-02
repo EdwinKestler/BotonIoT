@@ -65,7 +65,7 @@ const int NTP_PACKET_SIZE = 48;                                       //NTP time
 byte packetBuffer[NTP_PACKET_SIZE];                                   //Buffer to hold incoming & outgoing packets
 boolean NTP = false;                                                  //Bandera que establece el estado inicial del valor de NTP
 //----------------------------------------------------------------------Variables del servicio de envio de datos MQTT
-char server[] = "10.130.14.240";                                      //EL ORG es la organizacion configurada para el servicio de Bluemix
+char server[] = "eospower.flatbox.io";                                      //EL ORG es la organizacion configurada para el servicio de Bluemix
 const char* cserver = "";
 //char authMethod[] = "use-token-auth";                                 //Tipo de Autenticacion para el servicio de Bluemix (la calve es unica por cada nodo)
 //char token[] = TOKEN;                                                 //Variable donde se almacena el Token provisto por el servicio (ver Settings.h)
